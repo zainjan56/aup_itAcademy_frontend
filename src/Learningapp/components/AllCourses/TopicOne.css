@@ -1,0 +1,25 @@
+.firstTopic {
+  overflow-y: auto;
+}
+
+.videoArea {
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(217, 238, 225);
+  border-radius: 20px;
+}
+
+.videoFrame {
+  border-radius: 20px;
+}
+
+.courseMaterials {
+  margin: 50px;
+}
+
+.variables-details {
+  font-style: normal;
+  font-size: larger;
+}

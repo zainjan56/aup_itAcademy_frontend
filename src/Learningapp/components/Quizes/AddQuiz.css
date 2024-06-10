@@ -1,0 +1,17 @@
+.quizz-add-btn {
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(37, 158, 211);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.quizz-add-btn:hover {
+    background-color: rgb(79, 79, 32);
+}
+
+.quizzButtons {
+    display: flex;
+    gap: 5px;
+}

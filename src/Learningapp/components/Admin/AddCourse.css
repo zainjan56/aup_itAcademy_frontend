@@ -1,0 +1,69 @@
+.CourseTitle {
+    text-align: center;
+    margin: auto;
+    border-radius: 10px;
+    background-color: rgb(193, 204, 242);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.addCourseFormArea {
+    border-radius: 15px;
+    overflow: auto;
+    background-color: rgb(221, 242, 233);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.CourseformArea {
+    border-radius: 15px;
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.courseAddbtn {
+    width: 100px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(193, 204, 242);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.courseAddbtn:hover {
+    background-color: rgb(127, 113, 94);
+}
+
+/*.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #mycourseTitle {
+    width: 700px;
+    margin-left: 40px;
+  }
+
+  #mycourseInstructor {
+    width: 700px;
+    margin-left: 40px;
+  }
+
+  #mycourseTopics {
+    width: 700px;
+    margin-left: 40px;
+  }
+
+  #mycoursedesc {
+    width: 700px;
+    margin-left: 40px;
+  }
+
+  #mycourseImage {
+    width: 700px;
+    margin-left: 40px;
+  }
+
+  .courseAddLabel {
+    margin-left: 40px;
+  } */

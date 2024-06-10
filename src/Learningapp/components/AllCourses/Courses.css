@@ -1,0 +1,43 @@
+#courseCard {
+    height: 400px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.introArea {
+  background-color: rgb(222, 222, 222);
+  border-radius: 15px;
+}
+
+.courseIntroIcon {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.courseTitle {
+  color: #2f2699;
+}
+
+.pdf-display-cards {
+    border-radius: 20px !important;
+    height: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.pdf-display-cards:hover {
+    background-color: #1eb2a6;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.pdf-cards-title {
+    text-align: center;
+}
+
+  .student-logos {
+    display: flex;
+    justify-content: center;
+  }
+
+.pdf-display-cards:hover .pdf-cards-title {
+    color: #fff;
+  }

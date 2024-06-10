@@ -1,0 +1,88 @@
+Footer {
+    margin-top: 20px;
+}
+
+.firstRow {
+    height: 120px;
+    background-color: rgb(43, 48, 53);
+}
+
+.connectTxt {
+    color: white;
+    text-align: center;
+    margin-top: 45px;
+    font-weight: bold;
+}
+
+.footerLinks {
+    text-decoration: none;
+    color: white;
+}
+
+.footerLinks:hover {
+    color: blue;
+}
+
+.linksArea {
+    margin-top: 10px;
+}
+
+.iconOne {
+    margin-top: -6px;
+}
+
+.myAddresses {
+    margin-top: 10px;
+}
+
+.emailAddress {
+    text-decoration: none;
+    color: white;
+}
+
+.textFooter {
+    width: 220px;
+    text-align: center;
+    margin-left: 90px;
+    margin-top: 10px;
+    color: white;
+}
+
+.footerColumn {
+    text-align: center;
+    color: white;
+    background-color: rgb(43, 48, 53);
+}
+
+.footerCourses {
+    margin-top: 10px;
+}
+
+.iconsArea {
+    width: 200px;
+    height: 60px;  
+    margin-top: 30px;
+    margin-left: 150px;
+}
+
+.icons {
+    cursor: pointer;
+    margin: 5px;
+    margin-top: 20px;
+    color: white;
+}
+
+.icons:hover {
+    color: blue;
+}
+
+.thirdRow {
+    height: 70px;
+    background-color: black;
+}
+
+#copyrightarea {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}

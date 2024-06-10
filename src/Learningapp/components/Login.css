@@ -1,0 +1,100 @@
+.login {
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.loginLeft {
+    height: 420px;
+}
+
+.loginRight {
+    height: 420px;
+}
+
+.loginTitle {
+    width: 200px;
+    height: 250px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.loginTitleOne {
+    font-weight: bold;
+    color: rgb(79, 79, 79);
+}
+
+.loginTitleTwo {
+    font-weight: bold;
+    color: rgb(59, 113, 202);
+}
+
+.welcomeMessage {
+    text-align: center;
+    font-size: smaller;
+    font-variant: unset;
+    font-style:italic;
+    /* color: rgb(161, 167, 177); */
+}
+
+.loginFormArea {
+    width: 300px;
+    height: 380px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.loginHeading {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(59, 113, 202);
+}
+
+#inputOne {
+    width: 250px;
+    height: 30px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+#inputTwo {
+    width: 250px;
+    height: 30px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+#forgotPass {
+    text-align: center;
+    color: blue;
+    cursor: pointer;
+}
+
+.logo {
+    width: 30%;
+    height: 18%;
+    margin-top: 5px;
+    margin-left: 100px;
+    cursor: pointer;
+}
+
+#loginButton {
+    width: 240px;
+    margin-left: 25px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.noAccount {
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+#signUp {
+    float: right;
+    margin-top: -40px;
+    margin-right: 43px;
+}

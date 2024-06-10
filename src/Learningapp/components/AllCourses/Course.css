@@ -1,0 +1,65 @@
+.courseCont {
+    overflow-y: auto;
+}
+
+.circleprogress {
+    width: 200px;
+    height: 250px;
+    margin: auto;
+}
+
+.introArea {
+    margin: auto;
+    margin: 30px;
+}
+
+.selectedCard {
+    margin: auto;
+}
+
+.cplusdetails {
+    height: 200px;
+    background-color: rgb(217, 238, 225);
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.cpluscontent {
+    margin: 15px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cplus-course-details {
+    font-style: normal;
+    font-size: larger;
+}
+
+.starting-btn-cplus {
+    margin: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.quiz-btn {
+    margin: 5px;
+    margin-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.quiz-btn:hover {
+    background-color: brown;
+}
+
+.quiz-pic {
+    width: 80%;
+    height: 80%;
+}
+
+.cPlusIntro {
+    width: 80%;
+    margin: auto;
+    border: 2px dashed rgb(185, 93, 93);
+}
+
+.coursePictures {
+    height: 46%;
+}

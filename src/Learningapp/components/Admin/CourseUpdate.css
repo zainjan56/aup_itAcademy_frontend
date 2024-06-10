@@ -1,0 +1,31 @@
+.courseEditTitle {
+    text-align: center;
+    background-color: rgb(193, 204, 242);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.updateBtn {
+    width: 70px;
+    border: none;
+    color: white;
+    background-color: rgb(23, 162, 184);
+    border-radius: 15px;
+}
+
+#updateClose {
+    float: right;
+    width: 70px;
+    border: none;
+    color: white;
+    background-color: red;
+    border-radius: 15px;
+}
+
+.updateBtn:hover {
+    background-color: rgb(55, 46, 46);
+}
+
+#updateClose:hover {
+    background-color: rgb(55, 46, 46);
+}

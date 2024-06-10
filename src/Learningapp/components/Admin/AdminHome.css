@@ -1,0 +1,54 @@
+.adminHome {
+  justify-content: center;
+  border: 1px solid black;
+}
+
+#adminviewcard {
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgb(49, 51, 78);
+}
+
+.adminviewcolor {
+  color: rgb(214, 216, 244);
+}
+
+.usergroups {
+  display: flex;
+  justify-content: space-between;
+}
+
+.alluserlist {
+  text-align: center;
+}
+
+#usercardlistOne {
+  height: 280px;
+  overflow: auto;
+  border-radius: 20px;
+  background-color: rgb(49, 51, 78);
+}
+
+#usercardlistTwo {
+    height: 280px;
+    overflow: auto;
+    border-radius: 20px;
+    background-color: rgb(49, 51, 78);
+  }
+
+  #usercardlistThree {
+    height: 280px;
+    overflow: auto;
+    border-radius: 20px;
+    background-color: rgb(49, 51, 78);
+  }
+
+
+.adminuserslist {
+  text-align: center;
+  color: rgb(214, 216, 244);
+}
+
+.diffusers {
+  color: rgb(214, 216, 244);
+}

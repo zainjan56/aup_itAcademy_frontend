@@ -1,0 +1,18 @@
+.userslistbtn {
+    display: flex;
+    gap: 2px;
+}
+
+#userlistupdatebtn {
+    border: none;
+    color: white;
+    background-color: rgb(23, 162, 184);
+    border-radius: 15px;
+}
+
+#userlistdeletebtn {
+    border: none;
+    color: white;
+    background-color: red;
+    border-radius: 15px;
+}
