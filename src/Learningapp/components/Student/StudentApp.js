@@ -10,15 +10,12 @@ import { studentrecordActions } from "../../../store/studentrecord-slice";
 const StudentApp = () => {
   const dispatch = useDispatch();
   const studentid = useSelector((state) => state.login.items.id);
-
+ console.log("Student ID:", studentid);
   useEffect(() => {
 
       axios
       .get(`http://localhost:3001/studentscore/student-scores/${studentid}`)
       .then((response) => {
-        // setQuizscore(response.data.quizScore);
-        // setReadingScore(response.data.readingScore);
-        console.log(response.data);
         dispatch(studentrecordActions.studentallrecords(response.data));
         //console.log(readingScore);
       })

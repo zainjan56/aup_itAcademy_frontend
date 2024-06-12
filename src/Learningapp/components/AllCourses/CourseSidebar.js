@@ -14,11 +14,21 @@ import ProgressBar from "react-bootstrap/ProgressBar";
 
 const CourseSidebar = () => {
   const topicName = useSelector((state) => state.cart.items.topics);
-  const quizScore = useSelector((state) => (state?.studentrecord?.items ? state?.studentrecord?.items?.quizScore : 0));
-  
+  const studentRecords = useSelector((state) => state.studentrecord.items);
+
+  // Function to get score by courseCode
+  const getScoreByCourseCode = (courseCode) => {
+    const record = studentRecords.find((record) => record.courseCode === courseCode);
+    return record ? record.score : 0;
+  };
+
+  const cplusScore = getScoreByCourseCode("cplus22");
+  const reactScore = getScoreByCourseCode("react11");
+
   if (!topicName) {
     return <div>Loading...</div>;
   }
+
   return (
     <div
       style={{ display: "flex", height: "100vh", overflow: "scroll initial" }}
@@ -41,15 +51,13 @@ const CourseSidebar = () => {
               </CDBSidebarMenuItem>
             </NavLink>
               <CDBSidebarMenuItem>
-                <b>Quiz Score</b>
-                <ProgressBar now={quizScore} label={`${quizScore}%`} />
+                <b>React JS</b>
+                <ProgressBar now={reactScore} label={`${reactScore}%`} />
               </CDBSidebarMenuItem>
-            {/* <NavLink exact to="/quizhome" activeClassName="activeClicked">
               <CDBSidebarMenuItem>
-                <b>Quiz</b>
-                <ProgressBar now={quizScore} label={`${quizScore}%`} />
+                <b>C++</b>
+                <ProgressBar now={cplusScore} label={`${cplusScore}%`} />
               </CDBSidebarMenuItem>
-            </NavLink> */}
           </CDBSidebarMenu>
         </CDBSidebarContent>
 

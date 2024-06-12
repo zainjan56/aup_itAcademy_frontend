@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { scoreActions } from "../../../store/score-slice";
 import QuizResult from "./QuizResult";
 import "./QuizApp.css";
+import { quuizzActions } from "../../../store/quizz-slice";
 
 const QuizApp = () => {
   const dispatch = useDispatch();
@@ -15,27 +16,33 @@ const QuizApp = () => {
 
   const studentId = useSelector((state) => state.login);
   const studentName = useSelector((state) => state.login);
+  const courseFind = useSelector((state) => state.cart);
   const studentid = studentId.items.id;
   const studentname = studentName.items.name;
-  console.log(studentname)
+  const courseCode = courseFind.items.courseCode;
 
   // This useEffect watches for changes in the score and sends it to the server when it changes
   useEffect(() => {
     if (score > 0) {
-      sendScoresToServer(studentid, studentname, score);
+      sendScoresToServer(studentid, studentname, score, courseCode);
     }
-  }, [score, studentid, studentname]);
+  }, [score, studentid, studentname, courseCode]);
 
   useEffect(() => {
     axios
       .get("http://localhost:3001/quiz/questions")
       .then((response) => {
-        setQuestions(response.data);
+        console.log("Quiz API", response?.data);
+        const filteredQuestions = response?.data.find(
+          (quiz) => quiz.courseCode === courseCode
+        )?.questions;
+        setQuestions(filteredQuestions || []);
+        dispatch(quuizzActions.addQuizzQuestion(filteredQuestions));
       })
       .catch((error) => {
         console.error(error);
       });
-  }, []);
+  }, [courseCode, dispatch]);
 
   if (questions.length === 0) {
     return <div>Loading...</div>;
@@ -65,7 +72,7 @@ const QuizApp = () => {
     }
   };
 
-  const sendScoresToServer = async (studentid, studentname, score) => {
+  const sendScoresToServer = async (studentid, studentname, score, courseCode) => {
     try {
       await axios.post(
         "http://localhost:3001/studentscore/scores",
@@ -73,9 +80,9 @@ const QuizApp = () => {
           studentid,
           studentname,
           score,
+          courseCode,
         }
       );
-      //console.log(response.data);
     } catch (error) {
       console.error(error);
     }

@@ -17,7 +17,15 @@ import "./Studentrecord.css";
 
 const Studentrecord = () => {
   const studentRecords = useSelector((state) => state.studentrecord.items);
-  const courseTitle = useSelector((state) => state.cart.items.title);
+
+  // Function to get score by courseCode
+  const getScoreByCourseCode = (courseCode) => {
+    const record = studentRecords.find((record) => record.courseCode === courseCode);
+    return record ? record.score : 0;
+  };
+
+  const cplusScore = getScoreByCourseCode("cplus22");
+  const reactScore = getScoreByCourseCode("react11");
 
   // Check if studentRecords is empty
   if (!studentRecords || Object.keys(studentRecords).length === 0) {
@@ -45,9 +53,6 @@ const Studentrecord = () => {
     );
   }
 
-  const quizScore = studentRecords.quizScore;
-  // const readingScore = studentRecords.readingScore;
-
   return (
     <>
       <div>
@@ -70,17 +75,17 @@ const Studentrecord = () => {
                         <MDBCard className="mb-4 mb-md-0">
                           <MDBCardBody>
                             <MDBCardText className="mb-4">
-                              <b>{courseTitle} Course</b>
+                              <b>Course's Quizzes Progress</b>
                             </MDBCardText>
                             <MDBCardText
                               className="mb-1"
                               style={{ fontSize: ".77rem" }}
                             >
-                              Quizz Score
+                              React Score
                             </MDBCardText>
                             <MDBProgress className="rounded">
                               <MDBProgressBar
-                                width={quizScore}
+                                width={reactScore}
                                 valuemin={0}
                                 valuemax={100}
                               />
@@ -90,8 +95,15 @@ const Studentrecord = () => {
                               className="mt-4 mb-1"
                               style={{ fontSize: ".77rem" }}
                             >
-                              Reading Score
+                              C++ Score
                             </MDBCardText>
+                            <MDBProgress className="rounded">
+                              <MDBProgressBar
+                                width={cplusScore}
+                                valuemin={0}
+                                valuemax={100}
+                              />
+                            </MDBProgress>
                           </MDBCardBody>
                         </MDBCard>
                       </MDBCol>

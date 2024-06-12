@@ -42,6 +42,7 @@ import AdminstudentRec from "./Admin/AdminstudentRec";
 import Hcourses from "./Hcourses";
 import ResetPassword from "./ResetPassword";
 import ZoomApp from "./Teacher/ZoomApp";
+import QuizQuestions from "./Quizes/QuizQuestions";
 
 const App = () => {
   return (
@@ -86,6 +87,7 @@ const App = () => {
           <Route path="/topictwo" element={<TopicTwo />}></Route>
           <Route path="/adminstudentrec" element={<AdminstudentRec />}></Route>
           <Route path="/zoomapp" element={<ZoomApp />}></Route>
+          <Route path="/quizquestions" element={<QuizQuestions />}></Route>
         </Routes>
     </Router>
   );
