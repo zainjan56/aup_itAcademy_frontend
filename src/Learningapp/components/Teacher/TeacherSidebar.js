@@ -47,6 +47,16 @@ const TeacherSidebar = () => {
                 Add Quizz
               </CDBSidebarMenuItem>
             </NavLink>
+            <NavLink exact to="/teacheraddbook" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="upload">
+                Add Books
+              </CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink exact to="/tstudentrecord" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="spinner">
+                Learning Records
+              </CDBSidebarMenuItem>
+            </NavLink>
 
             <NavLink exact to="/logout" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="sign-out-alt">

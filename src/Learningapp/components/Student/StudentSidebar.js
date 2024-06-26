@@ -30,6 +30,15 @@ const StudentSidebar = () => {
             <NavLink exact to="/studentapp" activeClassName="activeClicked">
               <CDBSidebarMenuItem icon="columns">Dashboard</CDBSidebarMenuItem>
             </NavLink>
+            <NavLink exact to="/studentrecord" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="spinner">Learning</CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink exact to="/booklist" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="book-open">Books</CDBSidebarMenuItem>
+            </NavLink>
+            <NavLink exact to="/logout" activeClassName="activeClicked">
+              <CDBSidebarMenuItem icon="sign-out-alt">Logout</CDBSidebarMenuItem>
+            </NavLink>
           </CDBSidebarMenu>
         </CDBSidebarContent>
 

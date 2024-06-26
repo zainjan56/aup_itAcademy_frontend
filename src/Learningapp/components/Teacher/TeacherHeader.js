@@ -43,7 +43,6 @@ const TeacherHeader = () => {
 
               <Dropdown.Menu style={{ minWidth: "100%" }}>
                 <Dropdown.Item><Link exact to="/tprofile" className="profile-link">Profile</Link></Dropdown.Item>
-                <Dropdown.Item><Link exact to="/tstudentrecord" className="profile-link">Student Records</Link></Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
           </Nav>

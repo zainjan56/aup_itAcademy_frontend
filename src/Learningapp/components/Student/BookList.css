@@ -1,0 +1,9 @@
+.booksCards {
+    border-radius: 15px;
+}
+
+.booksPDFs {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
